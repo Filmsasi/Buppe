@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BuppeSanNivas</string>
+    <string name="name1">เลือกตัวละครที่ชอบในเรื่องบุพเพสันนิวาส</string>
+    <string name="name_name1">หมื่นสุนทรเทวา</string>
+    <string name="name_name2">แม่หญิงการะเกด</string>
+    <string name="name_name3">แม่หญิงจันทร์วาด</string>
+    <string name="name_name4">แม่มะลิ/ตองกีมาร์</string>
+    <string name="name_name5">จ้อย</string>
+    <string name="name_name6">ผิน/แย้ม</string>
+    <string name="name_name7">ปริก</string>
+    <string name="name_name8">ออกญาโหราธิบดี</string>
+    <string name="name2">อยากให้ใครเเต่งงานกับหมื่นสุนทรเทวา</string>
+    <string name="name_name9">แม่หญิงการะเกด</string>
+    <string name="name_name10">แม่หญิงจันทร์วาด</string>
+    <string name="name3">ตัวละครที่คุณชอบ</string>
+</resources>

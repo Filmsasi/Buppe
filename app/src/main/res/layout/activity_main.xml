@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.feemsasi.buppe.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_new_buppe_final3"
+        android:background="@color/colorImgBG"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/rest"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/rest2"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_below="@+id/rest2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header"
+                android:text="@string/name1"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/pic1"
+                android:src="@drawable/pic1"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/header"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/pic2"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:src="@drawable/pic2"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/header"
+                app:layout_constraintLeft_toRightOf="@+id/pic1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <CheckBox
+                android:id="@+id/cast1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_name1"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintLeft_toLeftOf="@+id/pic1"
+                app:layout_constraintTop_toBottomOf="@+id/pic1" />
+            <CheckBox
+                android:id="@+id/cast2"
+                android:text="@string/name_name2"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintLeft_toLeftOf="@+id/pic2"
+                app:layout_constraintTop_toBottomOf="@+id/pic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/pic3"
+                android:src="@drawable/pic3"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/cast1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/pic4"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <ImageView
+                android:id="@+id/pic4"
+                android:src="@drawable/pic4"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/cast2"
+                app:layout_constraintLeft_toRightOf="@+id/pic3"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <CheckBox
+                android:id="@+id/cast3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_name3"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintLeft_toLeftOf="@+id/pic3"
+                app:layout_constraintTop_toBottomOf="@+id/pic3" />
+            <CheckBox
+                android:id="@+id/cast4"
+                android:text="@string/name_name4"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintLeft_toLeftOf="@+id/pic4"
+                app:layout_constraintTop_toBottomOf="@+id/pic4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/pic5"
+                android:src="@drawable/pic5"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/cast3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/pic4"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <ImageView
+                android:id="@+id/pic6"
+                android:src="@drawable/pic6"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/cast4"
+                app:layout_constraintLeft_toRightOf="@+id/pic3"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <CheckBox
+                android:id="@+id/cast5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_name5"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintLeft_toLeftOf="@+id/pic5"
+                app:layout_constraintTop_toBottomOf="@+id/pic5" />
+            <CheckBox
+                android:id="@+id/cast6"
+                android:text="@string/name_name6"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintLeft_toLeftOf="@+id/pic6"
+                app:layout_constraintTop_toBottomOf="@+id/pic6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/pic7"
+                android:src="@drawable/pic7"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/cast5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/pic6"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <ImageView
+                android:id="@+id/pic8"
+                android:src="@drawable/pic8"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/cast6"
+                app:layout_constraintLeft_toRightOf="@+id/pic5"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <CheckBox
+                android:id="@+id/cast7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_name7"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintLeft_toLeftOf="@+id/pic7"
+                app:layout_constraintTop_toBottomOf="@+id/pic7" />
+            <CheckBox
+                android:id="@+id/cast8"
+                android:text="@string/name_name8"
+                android:onClick="onCheckboxClicked"
+                app:layout_constraintLeft_toLeftOf="@+id/pic8"
+                app:layout_constraintTop_toBottomOf="@+id/pic8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/header2"
+                android:text="@string/name2"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/cast7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/pic9"
+                android:src="@drawable/pic9"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/header2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/pic2"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+            <ImageView
+                android:id="@+id/pic10"
+                android:src="@drawable/pic10"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/header2"
+                app:layout_constraintLeft_toRightOf="@+id/pic1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <RadioGroup
+                android:id="@+id/radgroup"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/pic9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/cast9"
+                    android:layout_weight="1"
+                    android:text="@string/name_name9"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:onClick="onRadioButtonChecked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/cast10"
+                    android:layout_weight="1"
+                    android:text="@string/name_name10"
+                    android:onClick="onRadioButtonChecked"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/send"
+                android:text="ส่งคำตอบ"
+                android:background="@drawable/pic11"
+                app:layout_constraintTop_toBottomOf="@+id/radgroup"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
